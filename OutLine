@@ -1,0 +1,33 @@
+Classes:
+Logical Volumes:
+- HAS TO HAVE A VOLUME GROUP
+
+Volume groups:
+-extends PV class
+-
+
+Physical Volume:
+-@param String name
+
+Constructor(s):
+@param String name (sets the hard drive name)
+@param PVName (extension from PHD class)
+@param int giga (extension from PHD class)
+@param PHD object
+
+
+API(s):
+generateUUID()
+- generates a UUID whenever a PV is created
+- Initialized in the constructor
+- is added to a 2D array with the name of the name of the PV and the UUID
+
+- getterMethod for name and 2D array
+
+Physical Hard-drives:
+-@param String name
+-@param int gb (gigabits)
+
+API(s):
+- getter method for name
+- getter method for gb
